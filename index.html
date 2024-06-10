@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack's Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Jacky's Library</h2>
+        <button class="addButton" onclick="openForm()">Add Book</button>
+    </div>
+
+    <form class="addForm" action="">
+        <div onclick="closeForm()" class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-x-circle-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+            </svg>
+        </div>
+        <div class="formElement">
+            <label for="bookName">Book Name</label>
+            <input type="text" name="bookName">
+        </div>
+        <div class="formElement">
+            <label for="bookAuthor">Written By</label>
+            <input type="text" name="bookAuthor">
+        </div>
+
+        <div class="formElement">
+            <label for="pages">Total Pages</label>
+            <input type="text" name="pages">
+        </div>
+
+        <div class="formElement">
+
+            <label for="read">Read?</label>
+            <input class="checkBox" type="checkbox" name="read" id="">
+        </div>
+        <div class="formElement">
+            <button type="submit">Add to Library</button>
+        </div>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
