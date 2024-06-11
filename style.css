@@ -1,4 +1,5 @@
 body {
+	background: #000;
 	font-family: plus jakarta sans;
 	margin: 0px;
 	height: 100%;
@@ -76,6 +77,10 @@ body {
 	height: auto;
 	border: 0px;
 	background: none;
+}
+
+.closeToggle {
+	display: none;
 }
 
 .close svg:hover {

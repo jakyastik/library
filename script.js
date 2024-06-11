@@ -1,23 +1,33 @@
 const myLibrary = [];
 
-function Book(name, author, pages, read) {
-	// the constructor
-	this.name = name;
-	this.author = author;
-	this.pages = pages;
-	this.read = read;
+class Book {
+	constructor(name, author, pages, read) {
+		// the constructor
+		this.name = name;
+		this.author = author;
+		this.pages = pages;
+		this.read = read;
+	}
 }
 
-function addBookToLibrary() {}
+let addBookToLibrary = document.querySelector("#submitButton");
+addBookToLibrary.addEventListener("click", () => {
+	let bookName = document.getElementById("bookName").value;
+	let authorName = document.getElementById("bookAuthor").value;
+	let pages = document.getElementById("totalPages").value;
+	let read = document.getElementById("checkBox").value;
 
-function openForm() {
-	console.log("It works");
-}
+	console.log(bookName, authorName, pages, read);
+});
 
 // Show Hide the Add Section //
 
+function openForm() {
+	let addForm = document.querySelector(".addForm");
+	addForm.classList.toggle("closeToggle");
+}
+
 function closeForm() {
-	console.log("Close Form");
-	const closeButton = document.querySelector("close");
-	closeButton.style.dispay = "none";
+	let addForm = document.querySelector(".addForm");
+	addForm.classList.toggle("closeToggle");
 }
