@@ -82,11 +82,23 @@ function displayBooks() {
 		bookContainer.appendChild(toggleButton);
 		toggleButton.setAttribute("class", "toggleButton");
 
+		if (book.read) {
+			toggleButton.innerHTML = "Finished";
+			toggleButton.style.background = "orange";
+		} else {
+			toggleButton.innerHTML = "Pending";
+			toggleButton.style.background = "green";
+		}
+
 		toggleButton.addEventListener("click", () => {
 			if (book.read == true) {
-				toggleButton.innerHTML = "Mark as Unread";
+				toggleButton.innerHTML = "Pending";
+				toggleButton.style.background = "green";
+				book.read = false;
 			} else {
-				toggleButton.innerHTML = "Mark as Read";
+				toggleButton.innerHTML = "Finished";
+				toggleButton.style.background = "orange";
+				book.read = true;
 			}
 		});
 	});
