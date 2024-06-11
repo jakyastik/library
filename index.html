@@ -15,7 +15,11 @@
 <body>
     <div class="container">
         <h2>Jacky's Library</h2>
-        <button class="addButton" onclick="openForm()">Add Book</button>
+        <button class="addButton" onclick="openForm()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+            </svg>Add Book</button>
     </div>
 
     <form onsubmit="return false" class="addForm">
@@ -41,15 +45,18 @@
         </div>
 
         <div class="formElement">
-
             <label for="checkBox">Read?</label>
-            <input class="checkBox" id="checkBox" type="checkbox" name="read" id="">
+            <input class="checkBox" id="checkBox" type="checkbox" name="read">
         </div>
         <div class="formElement">
             <button type="submit" id="submitButton">Add to Library</button>
         </div>
 
     </form>
+
+    <div class="bookList">
+
+    </div>
     <script src="script.js"></script>
 </body>
 

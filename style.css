@@ -20,11 +20,13 @@ body {
 	height: auto;
 	justify-content: space-between;
 	align-items: center;
-	background-color: palegoldenrod;
+	background-color: cornsilk;
 }
 
 .container button {
 	font-size: 15px;
+	display: flex;
+	align-items: center;
 	height: fit-content;
 	border-radius: 10px;
 	padding: 7px 15px;
@@ -85,4 +87,35 @@ body {
 
 .close svg:hover {
 	fill: bisque;
+}
+
+.bookList {
+	background: #fff;
+	border-radius: 0px 0px 10px 10px;
+	width: 600px;
+	height: auto;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.bookDiv {
+	font-weight: bold;
+	font-size: 20px;
+	padding: 20px;
+	background-color: bisque;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.infoSection {
+	margin-top: 15px;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.infoSection p {
+	font-size: 15px;
+	font-weight: normal;
+	color: #333;
 }
