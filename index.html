@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack's Library</title>
+    <title>Your Library</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <h2>Jacky's Library</h2>
+        <h2>Your Library</h2>
         <button class="addButton" onclick="openForm()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                 fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                 <path
@@ -48,6 +48,12 @@
             <label for="checkBox">Read?</label>
             <input class="checkBox" id="checkBox" type="checkbox" name="read">
         </div>
+
+        <div class="formElement">
+            <label for="coverUrl">Cover URL</label>
+            <input type="text" id="coverUrl" name="coverUrl">
+        </div>
+
         <div class="formElement">
             <button type="submit" id="submitButton">Add to Library</button>
         </div>
